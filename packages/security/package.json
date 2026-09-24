@@ -1,0 +1,11 @@
+{
+  "name": "@orin/security",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "scripts": { "build": "tsc -b", "typecheck": "tsc -b --pretty false" },
+  "dependencies": { "@orin/contracts": "0.1.0", "ipaddr.js": "2.5.0", "jose": "6.2.12" }
+}

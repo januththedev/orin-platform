@@ -1,0 +1,29 @@
+{
+  "name": "orin-platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.6.2",
+  "engines": { "node": ">=22.18.0" },
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --pretty false",
+    "codegen": "node tools/codegen/generate.mjs",
+    "codegen:check": "node tools/codegen/generate.mjs --check",
+    "schemas:check": "node tools/contracts/check-schemas.mjs",
+    "compat:check": "node tools/contracts/check-compatibility.mjs",
+    "test:node": "npm run build && node tools/test/run-node-tests.mjs",
+    "test:python": "python -m unittest discover -s sdks/python/tests -p \"test_*.py\"",
+    "test:rust": "cargo test --manifest-path sdks/rust/Cargo.toml --locked",
+    "test": "npm run typecheck && npm run test:node && npm run test:python && npm run test:rust",
+    "scan:secrets": "node tools/security/scan-secrets.mjs",
+    "check": "npm run codegen:check && npm run schemas:check && npm run test && npm run scan:secrets",
+    "release:verify": "node tools/release/verify-release.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.15",
+    "quicktype-core": "26.0.0",
+    "typescript": "5.9.3"
+  }
+}
