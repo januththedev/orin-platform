@@ -1,7 +1,7 @@
 # Orin Platform and Chat Vertical Slice Design
 
 **Date:** 2026-09-24  
-**Status:** Approved in design review; awaiting written-spec approval  
+**Status:** Approved on 2026-09-24; implementation authorized
 **Scope:** Shared platform foundation, Orin Core/Chat, the Router inference dependency required by Chat, and the Tools search dependency required by Chat
 
 ## 1. Executive decision
