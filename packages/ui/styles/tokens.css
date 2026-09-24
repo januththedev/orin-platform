@@ -1,0 +1,21 @@
+:root {
+  --orin-accent: #7c5cff;
+  --orin-bg: #0b0d12;
+  --orin-surface: #151923;
+  --orin-text: #f5f7fb;
+  --orin-muted: #a7afc2;
+  --orin-border: #2b3345;
+  --orin-focus: #9d8cff;
+  --orin-radius: 0.75rem;
+  --orin-space-1: 0.25rem;
+  --orin-space-2: 0.5rem;
+  --orin-space-3: 0.75rem;
+  --orin-space-4: 1rem;
+  --orin-space-6: 1.5rem;
+  --orin-space-8: 2rem;
+  --orin-font-sans: system-ui, sans-serif;
+  --orin-motion-fast: 120ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --orin-motion-fast: 0ms; }
+}
