@@ -3,6 +3,7 @@ dist/
 target/
 __pycache__/
 *.pyc
+*.tsbuildinfo
 .DS_Store
 .env
 .env.*
