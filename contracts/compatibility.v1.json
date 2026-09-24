@@ -1,0 +1,6 @@
+{
+  "contract_version": "1.0.0",
+  "supported_minor_versions": ["1.0"],
+  "compatibility_window_days": 90,
+  "breaking_changes_require_major": true
+}

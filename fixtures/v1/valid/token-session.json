@@ -1,0 +1,12 @@
+{
+  "iss": "https://auth.orinai.org",
+  "sub": "acct_test_123",
+  "aud": "orin-core",
+  "typ": "session",
+  "jti": "sess_test_123",
+  "iat": 1760000000,
+  "exp": 1762592000,
+  "scope": "account:read",
+  "token_version": 1,
+  "auth_method": "neon"
+}

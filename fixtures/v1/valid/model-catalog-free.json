@@ -1,0 +1,11 @@
+{
+  "provider": "openrouter",
+  "model_id": "free-model",
+  "fetched_at": "2026-09-24T12:00:00Z",
+  "source_status": "success",
+  "source_version": "test",
+  "source_response_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "capabilities": ["text", "streaming", "image_generation"],
+  "context_limit": 8192,
+  "prices": { "prompt": 0, "completion": 0, "image": 0 }
+}

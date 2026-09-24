@@ -1,0 +1,6 @@
+{
+  "query": "weather in Kandy",
+  "n": 5,
+  "locale": "en",
+  "safe_search": "moderate"
+}

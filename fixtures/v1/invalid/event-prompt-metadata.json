@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "event_id": "event_test_123",
+  "type": "orin.chat.model.selected",
+  "occurred_at": "2026-09-24T12:00:00Z",
+  "product": "orin-chat",
+  "source": { "service": "orin-ai", "component": "chat" },
+  "request_id": "req_test_123456789",
+  "trace_id": "0123456789abcdef0123456789abcdef",
+  "correlation_id": "corr_test_123456789",
+  "account_id": "acct_test_123",
+  "session_id": "sess_test_123",
+  "run_id": null,
+  "outcome": "succeeded",
+  "duration_ms": 12,
+  "error_code": null,
+  "redacted_metadata": { "prompt": "must not be accepted" }
+}

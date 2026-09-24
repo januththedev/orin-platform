@@ -1,0 +1,12 @@
+{
+  "id": "result_test_123",
+  "title": "Kandy weather",
+  "source": "Open-Meteo",
+  "provider": "open-meteo",
+  "url": "https://example.com/kandy",
+  "snippet": "Forecast result",
+  "published_at": null,
+  "retrieved_at": "2026-09-24T12:00:00Z",
+  "kind": "weather",
+  "trust": "untrusted"
+}
