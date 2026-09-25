@@ -1,0 +1,14 @@
+{
+  "contract_version": "1.0.0",
+  "schemas": [
+    { "id": "https://schemas.orinai.org/platform/1.0.0/common.v1.schema.json", "path": "packages/contracts/schemas/common.v1.schema.json" },
+    { "id": "https://schemas.orinai.org/platform/1.0.0/tokens.v1.schema.json", "path": "packages/contracts/schemas/tokens.v1.schema.json" },
+    { "id": "https://schemas.orinai.org/platform/1.0.0/models.v1.schema.json", "path": "packages/contracts/schemas/models.v1.schema.json" },
+    { "id": "https://schemas.orinai.org/platform/1.0.0/events.v1.schema.json", "path": "packages/contracts/schemas/events.v1.schema.json" },
+    { "id": "https://schemas.orinai.org/platform/1.0.0/errors.v1.schema.json", "path": "packages/contracts/schemas/errors.v1.schema.json" },
+    { "id": "https://schemas.orinai.org/platform/1.0.0/router.v1.schema.json", "path": "packages/contracts/schemas/router.v1.schema.json" },
+    { "id": "https://schemas.orinai.org/platform/1.0.0/search.v1.schema.json", "path": "packages/contracts/schemas/search.v1.schema.json" },
+    { "id": "https://schemas.orinai.org/platform/1.0.0/chat.v1.schema.json", "path": "packages/contracts/schemas/chat.v1.schema.json" },
+    { "id": "https://schemas.orinai.org/platform/1.0.0/provider-processing.v1.schema.json", "path": "packages/contracts/schemas/provider-processing.v1.schema.json" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.orinai.org/platform/1.0.0/provider-processing.v1.schema.json",
+  "$defs": {
+    "ProviderConsentV1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["account_id", "provider_id", "policy_version", "data_categories", "purposes", "client", "granted_at", "expires_at", "revoked_at"],
+      "properties": {
+        "account_id": { "$ref": "common.v1.schema.json#/$defs/AccountIdV1" },
+        "provider_id": { "type": "string" },
+        "policy_version": { "type": "string" },
+        "data_categories": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "purposes": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "client": { "type": "string" },
+        "granted_at": { "$ref": "common.v1.schema.json#/$defs/TimestampV1" },
+        "expires_at": { "$ref": "common.v1.schema.json#/$defs/TimestampV1" },
+        "revoked_at": { "anyOf": [{ "$ref": "common.v1.schema.json#/$defs/TimestampV1" }, { "type": "null" }] }
+      }
+    }
+  }
+}

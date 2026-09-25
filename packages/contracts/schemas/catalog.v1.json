@@ -1,0 +1,17 @@
+{
+  "contract_version": "1.0.0",
+  "schemas": [
+    { "kind": "CommonV1", "path": "common.v1.schema.json" },
+    { "kind": "TokenClaimsV1", "path": "tokens.v1.schema.json" },
+    { "kind": "CatalogModelV1", "path": "models.v1.schema.json" },
+    { "kind": "EventEnvelopeV1", "path": "events.v1.schema.json" },
+    { "kind": "ErrorEnvelopeV1", "path": "errors.v1.schema.json" },
+    { "kind": "ChatRequestV1", "path": "router.v1.schema.json" },
+    { "kind": "ImageGenerationRequestV1", "path": "router.v1.schema.json" },
+    { "kind": "SearchRequestV1", "path": "search.v1.schema.json" },
+    { "kind": "SearchResultV1", "path": "search.v1.schema.json" },
+    { "kind": "MessageV1", "path": "chat.v1.schema.json" },
+    { "kind": "AttachmentV1", "path": "chat.v1.schema.json" },
+    { "kind": "ProviderConsentV1", "path": "provider-processing.v1.schema.json" }
+  ]
+}

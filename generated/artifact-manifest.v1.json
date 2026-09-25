@@ -1,0 +1,10 @@
+{
+  "contract_version": "1.0.0",
+  "generated_files": [
+    "packages/contracts/src/generated/v1.ts",
+    "sdks/python/src/orin_platform_contracts/models.py",
+    "sdks/rust/src/lib.rs",
+    "product/compatibility-matrix.v1.json"
+  ],
+  "source": "platform-v1.0.0"
+}

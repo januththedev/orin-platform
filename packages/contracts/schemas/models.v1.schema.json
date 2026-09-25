@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.orinai.org/platform/1.0.0/models.v1.schema.json",
+  "$defs": {
+    "ModelAliasV1": { "enum": ["orin-cheap", "orin-balanced", "orin-thinking", "orin-coding"] },
+    "ModelCapabilityV1": { "enum": ["text", "image_generation", "streaming"] },
+    "CatalogModelV1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "model_id", "fetched_at", "source_status", "capabilities", "prices"],
+      "properties": {
+        "provider": { "type": "string", "minLength": 1 },
+        "model_id": { "type": "string", "minLength": 1 },
+        "fetched_at": { "type": "string", "format": "date-time" },
+        "source_status": { "enum": ["success", "failure"] },
+        "source_version": { "type": "string" },
+        "source_response_hash": { "$ref": "common.v1.schema.json#/$defs/Sha256HexV1" },
+        "capabilities": { "type": "array", "items": { "$ref": "#/$defs/ModelCapabilityV1" }, "minItems": 1, "uniqueItems": true },
+        "context_limit": { "type": "integer", "minimum": 1 },
+        "prices": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["prompt", "completion", "image"],
+          "properties": {
+            "prompt": { "type": ["number", "null"], "minimum": 0 },
+            "completion": { "type": ["number", "null"], "minimum": 0 },
+            "image": { "type": ["number", "null"], "minimum": 0 }
+          }
+        }
+      }
+    }
+  }
+}

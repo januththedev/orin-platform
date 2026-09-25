@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.orinai.org/platform/1.0.0/common.v1.schema.json",
+  "$defs": {
+    "OpaqueIdV1": { "type": "string", "pattern": "^[A-Za-z0-9_-]{1,128}$" },
+    "RequestIdV1": { "type": "string", "minLength": 16, "maxLength": 128 },
+    "TraceIdV1": { "type": "string", "pattern": "^[a-f0-9]{32}$" },
+    "TimestampV1": { "type": "string", "format": "date-time" },
+    "AccountIdV1": { "$ref": "#/$defs/OpaqueIdV1" },
+    "IdempotencyKeyV1": { "type": "string", "minLength": 16, "maxLength": 200 },
+    "Sha256HexV1": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "LanguageSelectionV1": { "enum": ["auto", "en", "si", "ta"] }
+  }
+}

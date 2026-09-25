@@ -1,0 +1,30 @@
+{
+  "1.0.0": {
+    "ORIN_VALIDATION_FAILED": { "http": 400, "retryable": false },
+    "ORIN_UNSAFE_URL": { "http": 400, "retryable": false },
+    "ORIN_AUTHENTICATION_REQUIRED": { "http": 401, "retryable": false },
+    "ORIN_INVALID_CREDENTIALS": { "http": 401, "retryable": false },
+    "ORIN_TOKEN_EXPIRED": { "http": 401, "retryable": false },
+    "ORIN_TOKEN_REVOKED": { "http": 401, "retryable": false },
+    "ORIN_AUTHORIZATION_DENIED": { "http": 403, "retryable": false },
+    "ORIN_CONSENT_REQUIRED": { "http": 403, "retryable": false },
+    "ORIN_NOT_FOUND": { "http": 404, "retryable": false },
+    "ORIN_MODEL_NOT_FOUND": { "http": 404, "retryable": false },
+    "ORIN_METHOD_NOT_ALLOWED": { "http": 405, "retryable": false },
+    "ORIN_CONFLICT": { "http": 409, "retryable": false },
+    "ORIN_CLIENT_UNSUPPORTED": { "http": 426, "retryable": false },
+    "ORIN_MEDIA_TOO_LARGE": { "http": 413, "retryable": false },
+    "ORIN_CONTENT_REJECTED": { "http": 422, "retryable": false },
+    "ORIN_QUOTA_EXCEEDED": { "http": 429, "retryable": false },
+    "ORIN_RATE_LIMITED": { "http": 429, "retryable": true },
+    "ORIN_UPSTREAM_UNAVAILABLE": { "http": 502, "retryable": true },
+    "ORIN_STREAM_TERMINAL_ERROR": { "http": 502, "retryable": true },
+    "ORIN_PROVIDER_EXHAUSTED": { "http": 503, "retryable": true },
+    "ORIN_RATE_LIMIT_STATE_UNAVAILABLE": { "http": 503, "retryable": true },
+    "ORIN_AUTHZ_STATE_UNAVAILABLE": { "http": 503, "retryable": true },
+    "ORIN_STORAGE_FAILURE": { "http": 503, "retryable": true },
+    "ORIN_TELEMETRY_UNAVAILABLE": { "http": 503, "retryable": true },
+    "ORIN_UPSTREAM_TIMEOUT": { "http": 504, "retryable": true },
+    "ORIN_INTERNAL": { "http": 500, "retryable": false }
+  }
+}

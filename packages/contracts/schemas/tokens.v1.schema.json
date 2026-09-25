@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.orinai.org/platform/1.0.0/tokens.v1.schema.json",
+  "$defs": {
+    "TokenClaimsV1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["iss", "sub", "aud", "typ", "jti", "iat", "exp", "scope", "token_version", "auth_method"],
+      "properties": {
+        "iss": { "type": "string", "minLength": 1 },
+        "sub": { "$ref": "common.v1.schema.json#/$defs/OpaqueIdV1" },
+        "aud": { "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" }, "minItems": 1 }] },
+        "typ": { "enum": ["session", "device", "mcp", "router", "service", "step_up"] },
+        "jti": { "$ref": "common.v1.schema.json#/$defs/OpaqueIdV1" },
+        "iat": { "type": "integer", "minimum": 0 },
+        "exp": { "type": "integer", "minimum": 0 },
+        "nbf": { "type": "integer", "minimum": 0 },
+        "scope": { "type": "string", "pattern": "^[A-Za-z0-9:._~-]+( [A-Za-z0-9:._~-]+)*$" },
+        "token_version": { "type": "integer", "minimum": 0 },
+        "auth_method": { "type": "string", "minLength": 1 },
+        "sid": { "$ref": "common.v1.schema.json#/$defs/OpaqueIdV1" },
+        "account_id": { "$ref": "common.v1.schema.json#/$defs/AccountIdV1" },
+        "usage_reservation_id": { "$ref": "common.v1.schema.json#/$defs/OpaqueIdV1" },
+        "client_id": { "$ref": "common.v1.schema.json#/$defs/OpaqueIdV1" },
+        "amr": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    }
+  }
+}

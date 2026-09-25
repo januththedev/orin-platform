@@ -1,0 +1,11 @@
+{
+  "consumer": "orin-router-service",
+  "consumer_version": "1.1.0",
+  "platform_tag": "platform-v1.0.0",
+  "minimum_platform_version": "0.1.0",
+  "contract_version": "1.0.0",
+  "schema_version": "1.0",
+  "required_exports": ["@orin/contracts", "@orin/config", "@orin/security", "@orin/observability", "@orin/client"],
+  "deferred_exports": ["mcp", "router.key-management", "tools.run"],
+  "test_command": "npm run test:platform"
+}

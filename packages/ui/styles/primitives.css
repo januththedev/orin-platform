@@ -1,0 +1,3 @@
+.orin-button { border: 1px solid var(--orin-border); border-radius: var(--orin-radius); background: var(--orin-accent); color: #fff; padding: var(--orin-space-2) var(--orin-space-4); font: inherit; }
+.orin-button:focus-visible, .orin-input:focus-visible { outline: 3px solid var(--orin-focus); outline-offset: 2px; }
+.orin-input { border: 1px solid var(--orin-border); border-radius: var(--orin-radius); background: var(--orin-surface); color: var(--orin-text); padding: var(--orin-space-2) var(--orin-space-3); font: inherit; }

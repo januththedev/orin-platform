@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.orinai.org/platform/1.0.0/chat.v1.schema.json",
+  "$defs": {
+    "AttachmentV1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "object_key", "mime_type", "size_bytes", "sha256"],
+      "properties": {
+        "id": { "$ref": "common.v1.schema.json#/$defs/OpaqueIdV1" },
+        "object_key": { "type": "string", "minLength": 1 },
+        "mime_type": { "enum": ["image/png", "image/jpeg", "image/webp", "audio/mpeg", "audio/wav", "audio/webm"] },
+        "size_bytes": { "type": "integer", "minimum": 1 },
+        "sha256": { "$ref": "common.v1.schema.json#/$defs/Sha256HexV1" }
+      }
+    },
+    "MessageV1": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "text", "language", "created_at"],
+      "properties": {
+        "id": { "$ref": "common.v1.schema.json#/$defs/OpaqueIdV1" },
+        "role": { "enum": ["user", "assistant", "system"] },
+        "text": { "type": "string", "maxLength": 200000 },
+        "language": { "$ref": "common.v1.schema.json#/$defs/LanguageSelectionV1" },
+        "created_at": { "$ref": "common.v1.schema.json#/$defs/TimestampV1" },
+        "attachment_ids": { "type": "array", "items": { "$ref": "common.v1.schema.json#/$defs/OpaqueIdV1" } },
+        "provenance": { "type": "object" }
+      }
+    }
+  }
+}
